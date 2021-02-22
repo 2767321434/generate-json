@@ -10,7 +10,22 @@ import java.security.SecureRandom;
 
 public class EncFileUtil {
 
-
+		/**
+		 * 根据参数生成KEY
+		 */
+		public static Key getKey(String strKey) {
+			try {
+				KeyGenerator _generator = KeyGenerator.getInstance("DES");
+				SecureRandom secureRandom = SecureRandom.getInstance("SHA1PRNG" );
+				secureRandom.setSeed(strKey.getBytes());
+				_generator.init(secureRandom);
+				Key key = _generator.generateKey();
+				_generator = null;
+				return key;
+			} catch (Exception e) {
+				throw new RuntimeException("Error initializing SqlMap class. Cause: " + e);
+			}
+		}
 		/**
 		 * @Description: 加密
 		 */
