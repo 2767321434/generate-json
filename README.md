@@ -1,6 +1,6 @@
 # generate-json
 [![Release](https://jitpack.io/v/User/Repo.svg)]
-(https://jitpack.io/#User/Repo)
+(https://jitpack.io/2767321434/Repo)
 <br>
 maven plugin<br>
 generate Update json and encrypt jar in output directory<br>
