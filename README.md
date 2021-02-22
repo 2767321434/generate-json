@@ -25,7 +25,10 @@ maven install 后如下引入，key是加密的密码，needEncrypt 为true开�
 </plugin>
 ```
 <br>
+
 在线引入
+<br>
+
 ```xml
 <pluginRepositories>
         <pluginRepository>
