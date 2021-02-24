@@ -46,7 +46,7 @@ maven install 后如下引入，key是加密的密码，needEncrypt 为true开�
 <plugin>
      <groupId>com.github.2767321434</groupId>
      <artifactId>generate-json</artifactId>
-     <version>1.0-SNAPSHOT</version>
+     <version>1.0</version>
      <executions>
         <execution>
            <phase>package</phase>
