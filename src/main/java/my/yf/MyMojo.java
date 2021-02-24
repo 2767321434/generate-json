@@ -64,8 +64,6 @@ public class MyMojo
         }
         String sha1=getSha1(jarFile);
         UpdataJson json=new UpdataJson();
-        long fileSize = jarFile.length();
-        json.setFileSize(fileSize);
         json.setVersion(version);
         DateFormat df=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         json.setPublishTime(df.format(new Date()));
@@ -78,6 +76,8 @@ public class MyMojo
                 String encryptName=target.getAbsolutePath()+File.separator+"packages";
                 EncFileUtil.encrypt(jarFile,encryptName,key);
                 packageName="packages";
+				File encrypFile=new File(encryptName);
+                long fileSize = encrypFile.length();
             } catch (Exception e) {
                 getLog().error("加密打包文件出错");
                 e.printStackTrace();
