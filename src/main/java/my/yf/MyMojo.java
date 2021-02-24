@@ -78,6 +78,7 @@ public class MyMojo
                 packageName="packages";
 				File encrypFile=new File(encryptName);
                 long fileSize = encrypFile.length();
+                json.setFileSize(fileSize);
             } catch (Exception e) {
                 getLog().error("加密打包文件出错");
                 e.printStackTrace();
