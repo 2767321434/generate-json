@@ -1,4 +1,5 @@
-# generate-json
+# generate-json 
+[![](https://jitpack.io/v/2767321434/generate-json.svg)](https://jitpack.io/#2767321434/generate-json)<br>
 maven plugin<br>
 generate Update json and encrypt jar in output directory<br>
 maven 插件<br>
